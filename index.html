@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Austin Trivia</title>
+
+    <meta charset="UTF-8">
+
+    <!-- Link to jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <!-- Link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--Link to css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body scroll="no" style="overflow">
+
+    <div id="container">
+
+        <div class="row" id="row1">
+           <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <p id="title">City of Austin Trivia</p>
+            </div>
+            <div class="col-sm-2"></div>
+            <style>
+                @font-face {
+                    font-family: "Alegreya";
+                    src: url("https://fonts.google.com/specimen/Alegreya?selection.family=Alegreya");
+                    
+                }
+                #title {
+                    text-align: center;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 60px;
+                    font-family: "Texas";
+                    margin: 20px 53px 0px 3px;
+                }
+            </style>
+        </div>
+
+            <div class="col-sm-6">
+                <div id="artist">
+                    <img class="mySlides" src="assets/images/willie-nelson-picnic.jpg">
+                    <img class="mySlides" src="assets/images/waylon.jpg">
+                    <img class="mySlides" src="assets/images/capital.jpg">
+                    <img class="mySlides" src="assets/images/springs.jpg">
+                    <img class="mySlides" src="assets/images/stevie.jpg">
+                    <script>
+                        var myIndex = 0;
+                        carousel();
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) {
+                                myIndex = 1
+                            }
+                            x[myIndex - 1].style.display = "block";
+                            setTimeout(carousel, 4000); // Change image every 2 seconds
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <div class="col-sm-6" id="grandFatherClock">
+                <H2>Click on the best beer brewed in austin to start</H2>
+                <div class="timerPanel panel panel-default hidden">
+                    <div class="panel-body">
+                        <div id="timer"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+           <div class="col-sm-6" id="questionsAnswers">
+                <img src="assets/images/marco.jpeg" alt="Marco_IPA" id="beer"/>
+                <div class="QApanel panel panel-default hidden">
+                    <div class="panel-body">
+                        <p id="questionPanel"></p>
+                    </div>
+                </div>
+                <div id="answers">
+                    <ul id="choicesList"></ul>
+                </div>
+                <div>
+                    <button type="button" class="hidden" id="nextButton">Next</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6" id="footer"></div>
+            <div class="col-sm-3"></div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

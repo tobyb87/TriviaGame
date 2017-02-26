@@ -1,0 +1,118 @@
+
+
+body {
+	background-color: #000000;
+}
+
+.hidden {
+    visibility: hidden;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+#row1 {
+	height: 75px;
+}
+
+#artist {
+	background-repeat: no-repeat;
+	max-width: 100%;
+	max-height: 100%;
+	padding-top: 10px;
+}
+
+.mySlides {
+	max-width:100%;
+    max-height:100%;
+    border-radius: 15px 15px;
+}
+
+
+
+#beer {
+	margin: 20px 20px 0px 115px;
+}
+
+
+#clickZilker {
+	margin: 30px 105px 0px 15px;
+}
+
+
+
+#questionsAnswers {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+
+.QApanel {
+	border-color: #000;
+	border-radius: 5px;
+	margin: 20px -5px 10px 35px;
+}
+
+
+
+#questionPanel, #timer {
+	margin: 5px 5px 5px 5px;
+	padding-left: 5px;
+	color: #000;
+	background-color: #fff;
+	border-color: #000000;
+	font-weight: bold;
+	word-wrap: break-word;
+}
+
+
+#questionPanel {
+	font-family: Times;
+
+}
+
+#choicesList {
+	font-family: Times;
+	color: #fff;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#timer {
+	font-family: Times;
+}
+
+
+.btn-group-vertical {
+	margin: 0px 0px 0px 20px;
+}
+
+
+.btn-primary {
+	background-color: #fff;
+	border-color: #000000;
+	color: #000000;
+	font-weight: bold;
+	font-family: "Alegreya";
+}
+
+
+.timerPanel {
+	border-color: #000;
+	border-radius: 5px;
+	margin: 20px 35px 20px -55px;
+}
+
+
+#footer {
+	text-align: center;
+	padding-top: 15px;
+	padding-right: 92px;
+}
+
+
+#choiceButton {
+	background-color: #ffff00;
+}
