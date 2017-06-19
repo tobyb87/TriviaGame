@@ -101,7 +101,7 @@ var timeInterval;
   });
 
 });
-  //Ask why plus signs around secs and elem are necessary
+
   //var timer = setTimeout('countDown('+secs+', "'+elem+'")', 1000);
 
   //Function for timer
